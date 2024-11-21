@@ -10,16 +10,16 @@ class EventEntity(
     var id: Int = 0,
     var name: String = "",
     var mediaCover: String? = null,
-    var summary: String?,
+    var summary: String = "",
     var description: String = "",
     var ownerName: String = "",
     var cityName: String = "",
-    var quota: Int?,
-    var link: String?,
+    var quota: Int = 0,
+    var link: String = "",
     var beginTime: String = "",
-    var endTime: String?,
+    var endTime: String = "",
     var category: String = "",
-    var registrants: Int?
+    var registrants: Int = 0,
 //    @ColumnInfo(name = "isFavorite")
 //    var isFavorite: Boolean = false
 
