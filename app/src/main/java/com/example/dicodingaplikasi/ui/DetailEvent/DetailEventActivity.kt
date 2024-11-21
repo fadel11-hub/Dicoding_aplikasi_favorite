@@ -112,16 +112,17 @@ class DetailEventActivity : AppCompatActivity() {
                  event.name = name ?: ""
                  event.id = id
                  event.mediaCover = photo ?: ""
-                 event.summary = summary ?: ""
-                 event.description = description ?: ""
+                 event.description = description  ?: ""
                  event.ownerName = owner ?: ""
                  event.cityName = location ?: ""
                  event.quota = quota
                  event.link = link ?: ""
                  event.beginTime = beginTime ?: ""
-                 event.endTime = intent.getStringExtra(EXTRA_END_TIME) ?: ""
-                 event.category = intent.getStringExtra(EXTRA_CATEGORY) ?: ""
-                 event.registrants = registrants
+                 event.endTime = ""
+                 event.category = ""
+                 event.registrants = 0
+                 Log.d("LOGDEBUG", "id : $id")
+
 
                  viewModel.addEvent(event)
              } else {
@@ -130,16 +131,17 @@ class DetailEventActivity : AppCompatActivity() {
                  event.name = name ?: ""
                  event.id = id
                  event.mediaCover = photo ?: ""
-                 event.summary = summary ?: ""
-                 event.description = description ?: ""
+                 event.description = description  ?: ""
                  event.ownerName = owner ?: ""
                  event.cityName = location ?: ""
                  event.quota = quota
                  event.link = link ?: ""
                  event.beginTime = beginTime ?: ""
-                 event.endTime = intent.getStringExtra(EXTRA_END_TIME) ?: ""
-                 event.category = intent.getStringExtra(EXTRA_CATEGORY) ?: ""
-                 event.registrants = registrants
+                 event.endTime = ""
+                 event.category = ""
+                 event.registrants = 0
+                 Log.d("LOGDEBUG", "id : $id")
+
 
                  viewModel.deleteEvent(event)
              }

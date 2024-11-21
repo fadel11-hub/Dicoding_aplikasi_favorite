@@ -11,14 +11,14 @@ class EventEntity(
     var name: String = "",
     var mediaCover: String? = null,
     var summary: String?,
-    var description: String?,
-    var ownerName: String?,
-    var cityName: String?,
+    var description: String = "",
+    var ownerName: String = "",
+    var cityName: String = "",
     var quota: Int?,
     var link: String?,
-    var beginTime: String?,
+    var beginTime: String = "",
     var endTime: String?,
-    var category: String?,
+    var category: String = "",
     var registrants: Int?
 //    @ColumnInfo(name = "isFavorite")
 //    var isFavorite: Boolean = false
