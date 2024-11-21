@@ -82,6 +82,9 @@ class UpcomingFragment : Fragment() {
             putExtra(DetailEventActivity.EXTRA_SUMMARY, event.summary)
             putExtra(DetailEventActivity.EXTRA_LINK, event.link)
             putExtra(DetailEventActivity.EXTRA_ID, event.id)
+            putExtra(DetailEventActivity.EXTRA_END_TIME, event.endTime)
+            putExtra(DetailEventActivity.EXTRA_CATEGORY, event.category)
+
         }
 
         Log.d("LOGDEBUG", "this is id in upcoming: ${event.id}")

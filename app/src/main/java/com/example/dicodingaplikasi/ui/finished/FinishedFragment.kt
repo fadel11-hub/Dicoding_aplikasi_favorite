@@ -66,6 +66,8 @@ class FinishedFragment : Fragment() {
         intent.putExtra(DetailEventActivity.EXTRA_SUMMARY, event.summary)
         intent.putExtra(DetailEventActivity.EXTRA_LINK, event.link)
         intent.putExtra(DetailEventActivity.EXTRA_ID, event.id)
+        intent.putExtra(DetailEventActivity.EXTRA_END_TIME, event.endTime)
+        intent.putExtra(DetailEventActivity.EXTRA_CATEGORY, event.category)
         startActivity(intent)
     }
 

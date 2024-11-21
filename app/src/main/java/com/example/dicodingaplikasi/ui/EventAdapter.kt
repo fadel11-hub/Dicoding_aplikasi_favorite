@@ -49,6 +49,7 @@ class EventAdapter(private val onItemClick: (ListEventsItem) -> Unit): ListAdapt
             binding.tvOwner.text = event.ownerName
             binding.tvLocation.text = event.cityName
             Glide.with(binding.root.context).load(event.imageLogo).into(binding.ivThumbnail)
+
         }
     }
 

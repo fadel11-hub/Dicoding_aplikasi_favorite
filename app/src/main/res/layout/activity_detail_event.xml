@@ -54,7 +54,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:textColor="@color/black"
                 android:textSize="16sp"
                 tools:text="Dicoding" />
 
@@ -73,7 +72,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/beginTime"
-                        android:textColor="@color/black"
                         android:textSize="11sp" />
 
                     <TextView
@@ -88,7 +86,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
                         android:textSize="11sp"
                         tools:text="Dicoding" />
                 </TableRow>
@@ -102,7 +99,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/quota"
-                        android:textColor="@color/black"
                         android:textSize="11sp" />
 
                     <TextView
@@ -117,7 +113,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
                         android:textSize="11sp"
                         tools:text="Dicoding" />
                 </TableRow>
@@ -131,7 +126,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/location"
-                        android:textColor="@color/black"
                         android:textSize="11sp" />
 
                     <TextView
@@ -146,7 +140,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:textColor="@color/black"
                         android:textSize="11sp"
                         tools:text="Online" />
                 </TableRow>

@@ -58,7 +58,17 @@ class EventRepository private constructor(
         return EventEntity(
             id = event.id, // Konversi id ke String
             name = event.name,
-            mediaCover = event.mediaCover
+            mediaCover = event.mediaCover,
+            summary = event.summary,
+            description = event.description,
+            ownerName = event.ownerName,
+            cityName = event.cityName,
+            quota = event.quota,
+            link = event.link,
+            beginTime = event.beginTime,
+            endTime = event.endTime,
+            category = event.category,
+            registrants = event.registrants
         )
     }
 

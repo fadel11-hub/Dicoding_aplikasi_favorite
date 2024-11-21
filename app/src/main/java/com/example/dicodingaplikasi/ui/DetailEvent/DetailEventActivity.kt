@@ -39,6 +39,8 @@ class DetailEventActivity : AppCompatActivity() {
         const val EXTRA_SUMMARY = "extra_summary"
         const val EXTRA_LINK = "extra_link"
         const val EXTRA_ID = "extra_id"
+        const val EXTRA_END_TIME = "extra_end_time"
+        const val EXTRA_CATEGORY = "extra_category"
     }
 
      override fun onCreate(savedInstanceState: Bundle?) {
@@ -110,6 +112,16 @@ class DetailEventActivity : AppCompatActivity() {
                  event.name = name ?: ""
                  event.id = id
                  event.mediaCover = photo ?: ""
+                 event.summary = summary ?: ""
+                 event.description = description ?: ""
+                 event.ownerName = owner ?: ""
+                 event.cityName = location ?: ""
+                 event.quota = quota
+                 event.link = link ?: ""
+                 event.beginTime = beginTime ?: ""
+                 event.endTime = intent.getStringExtra(EXTRA_END_TIME) ?: ""
+                 event.category = intent.getStringExtra(EXTRA_CATEGORY) ?: ""
+                 event.registrants = registrants
 
                  viewModel.addEvent(event)
              } else {
@@ -118,6 +130,16 @@ class DetailEventActivity : AppCompatActivity() {
                  event.name = name ?: ""
                  event.id = id
                  event.mediaCover = photo ?: ""
+                 event.summary = summary ?: ""
+                 event.description = description ?: ""
+                 event.ownerName = owner ?: ""
+                 event.cityName = location ?: ""
+                 event.quota = quota
+                 event.link = link ?: ""
+                 event.beginTime = beginTime ?: ""
+                 event.endTime = intent.getStringExtra(EXTRA_END_TIME) ?: ""
+                 event.category = intent.getStringExtra(EXTRA_CATEGORY) ?: ""
+                 event.registrants = registrants
 
                  viewModel.deleteEvent(event)
              }

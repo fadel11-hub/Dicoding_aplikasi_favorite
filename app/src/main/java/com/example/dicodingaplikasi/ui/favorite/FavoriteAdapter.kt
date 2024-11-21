@@ -27,7 +27,17 @@ class FavoriteAdapter(private val onFavoriteClick: (EventEntity) -> Unit) :
                 EventEntity(
                     id = selectedItem.id,
                     name = selectedItem.name,
-                    mediaCover = selectedItem.imageLogo
+                    mediaCover = selectedItem.imageLogo,
+                    summary = selectedItem.summary,
+                    description = selectedItem.description,
+                    ownerName = selectedItem.ownerName,
+                    cityName = selectedItem.cityName,
+                    quota = selectedItem.quota,
+                    link = selectedItem.link,
+                    beginTime = selectedItem.beginTime,
+                    endTime = selectedItem.endTime,
+                    category = selectedItem.category,
+                    registrants = selectedItem.registrants
                 )
             )
         }
